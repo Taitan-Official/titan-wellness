@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN | Premium Wellness & Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #050505; color: #ffffff; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F1D592 50%, #B8860B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gold-bg { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
+        .card-hover { border: 1px solid #1a1a1a; transition: all 0.3s ease; }
+        .card-hover:hover { border-color: #D4AF37; transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center px-8 py-6 border-b border-gray-900 sticky top-0 bg-[#050505] z-50">
+        <div class="text-2xl font-bold tracking-tighter serif"><span class="gold-gradient text-3xl">TITAN</span> GLOBAL</div>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-[0.2em] font-light text-gray-400">
+            <a href="#" class="hover:text-white transition">Wellness</a>
+            <a href="#" class="hover:text-white transition">Products</a>
+            <a href="#" class="hover:text-white transition">About Us</a>
+        </div>
+        <button class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 text-[10px] uppercase tracking-widest hover:bg-[#D4AF37] hover:text-black transition">Elite Access</button>
+    </nav>
+
+    <header class="py-24 text-center px-4">
+        <h1 class="text-5xl md:text-7xl serif mb-6">Innovating <span class="gold-gradient italic">Global Health.</span></h1>
+        <p class="max-w-2xl mx-auto text-gray-400 font-light text-lg mb-10 leading-relaxed">
+            Official Premium Portal of TITAN. Committed to excellence and health, inspired by a vision to empower lives through Tiens solutions.
+        </p>
+        <div class="flex justify-center space-x-4">
+            <button class="gold-bg text-black font-bold px-8 py-4 rounded-sm hover:opacity-90 transition">Explore Products</button>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto bg-[#0a0a0a] border border-gray-800 p-10 rounded-2xl mb-24">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl serif mt-2 gold-gradient">Smart Product Finder</h2>
+            <p class="text-gray-500 text-sm mt-2">আপনার শারীরিক প্রয়োজন অনুযায়ী সঠিক পণ্যটি বেছে নিন।</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button onclick="findProduct('bone')" class="border border-gray-800 p-4 rounded-xl hover:bg-[#111] card-hover text-sm transition">হাড়ের সুরক্ষা</button>
+            <button onclick="findProduct('immunity')" class="border border-gray-800 p-4 rounded-xl hover:bg-[#111] card-hover text-sm transition">রোগ প্রতিরোধ</button>
+            <button onclick="findProduct('skin')" class="border border-gray-800 p-4 rounded-xl hover:bg-[#111] card-hover text-sm transition">ত্বক ও সৌন্দর্য</button>
+            <button onclick="findProduct('detox')" class="border border-gray-800 p-4 rounded-xl hover:bg-[#111] card-hover text-sm transition">ডিটক্স ও ডিভাইস</button>
+        </div>
+
+        <div id="result-area" class="mt-10 hidden border-t border-gray-800 pt-8">
+            <h4 class="text-[#D4AF37] font-semibold mb-4 uppercase text-xs tracking-widest">Recommended for you:</h4>
+            <div id="product-list" class="grid md:grid-cols-2 gap-4"></div>
+        </div>
+    </section>
+
+    <section class="px-8 pb-24 grid md:grid-cols-3 gap-8">
+        <div class="bg-[#0c0c0c] p-8 rounded-lg card-hover">
+            <h3 class="text-xl serif gold-text mb-4">Nutrient Super Calcium</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6">হাড়ের মজবুতি নিশ্চিত করতে এবং ক্যালসিয়ামের অভাব পূরণে Tiens-এর সেরা পণ্য।</p>
+            <button class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest underline">Learn More</button>
+        </div>
+        <div class="bg-[#0c0c0c] p-8 rounded-lg card-hover">
+            <h3 class="text-xl serif gold-text mb-4">Cordyceps Capsules</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6">প্রাকৃতিক রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি এবং ফুসফুসের সুরক্ষায় অপ্রতিদ্বন্দ্বী।</p>
+            <button class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest underline">Learn More</button>
+        </div>
+        <div class="bg-[#0c0c0c] p-8 rounded-lg card-hover">
+            <h3 class="text-xl serif gold-text mb-4">Circulative Massager</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6">রক্ত সঞ্চালন স্বাভাবিক রাখতে এবং ক্লান্তি দূর করতে আধুনিক ডিভাইস।</p>
+            <button class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest underline">Learn More</button>
+        </div>
+    </section>
+
+    <footer class="py-16 border-t border-gray-900 text-center bg-[#050505]">
+        <p class="text-xs text-gray-600 tracking-[0.3em] uppercase mb-4">&copy; 2026 TITAN Global x Tiens Partners</p>
+        <p class="text-gray-400 text-sm mb-6">Contact: taitanofficials@gmail.com</p>
+        <div class="flex justify-center">
+            <a href="https://wa.me/8801XXXXXXXXX" class="bg-[#25D366] px-8 py-3 rounded-full text-white font-bold text-sm shadow-xl hover:scale-105 transition transform">WhatsApp Consultation</a>
+        </div>
+    </footer>
+
+    <script>
+        function findProduct(type) {
+            const resultArea = document.getElementById('result-area');
+            const productList = document.getElementById('product-list');
+            resultArea.classList.remove('hidden');
+            productList.innerHTML = "";
+            const products = {
+                bone: ['Nutrient Super Calcium Powder', 'Children Calcium Powder'],
+                immunity: ['Tiens Spirulina', 'Cordyceps Capsules', 'Zinc Capsules'],
+                skin: ['Orecare Herbal Toothpaste', 'Capellius Ginger Shampoo', 'Spa Care Sulphur Soap'],
+                detox: ['Lipid Management Tea', 'Blood Circulative Massager', 'Chitosan Capsules']
+            };
+            products[type].forEach(p => {
+                productList.innerHTML += `<div class='bg-[#111] p-4 border-l-2 border-[#D4AF37] text-sm text-gray-300 animate-pulse'>${p}</div>`;
+            });
+        }
+    </script>
+</body>
+</html>
