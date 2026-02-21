@@ -3,84 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITAN | Premium Wellness Portal</title>
+    <title>TITAN | Official Tiens Partner Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #030303; color: #ffffff; overflow-x: hidden; }
-        .serif { font-family: 'Cinzel', serif; }
-        .gold-gradient { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .gold-bg { background: linear-gradient(135deg, #bf953f, #b38728); }
-        .card-blur { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(191, 149, 63, 0.15); transition: all 0.4s ease; }
-        .card-blur:hover { border-color: #bf953f; transform: translateY(-10px); background: rgba(191, 149, 63, 0.05); }
-        .hero-glow { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 80%; height: 500px; background: radial-gradient(circle, rgba(191, 149, 63, 0.1) 0%, transparent 70%); z-index: -1; }
+        body { font-family: 'Roboto', sans-serif; background-color: #f8f9fa; color: #333; }
+        .tiens-blue { background-color: #0056b3; } /* Tiens standard blue */
+        .tiens-green { background-color: #28a745; }
+        .gold-text { color: #bf953f; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.tiens.com/Public/Home/images/banner1.jpg'); background-size: cover; background-position: center; }
+        .nav-link:hover { color: #bf953f; border-bottom: 2px solid #bf953f; }
+        .product-card { background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
     </style>
 </head>
 <body>
-    <div class="hero-glow"></div>
 
-    <nav class="flex justify-between items-center px-10 py-8 sticky top-0 bg-[#030303]/90 backdrop-blur-md z-50 border-b border-white/5">
-        <div class="text-3xl font-bold tracking-[0.2em] serif gold-gradient">TITAN</div>
-        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.3em] font-light text-gray-400">
-            <a href="#about" class="hover:text-[#bf953f] transition">Vision</a>
-            <a href="#products" class="hover:text-[#bf953f] transition">Solutions</a>
-            <a href="#contact" class="hover:text-[#bf953f] transition">Connect</a>
+    <div class="tiens-blue text-white text-[11px] py-2 px-10 flex justify-between items-center">
+        <span>Global Network | Bangladesh Office</span>
+        <div class="space-x-4">
+            <span>Email: titanofficials595@gmail.com</span>
         </div>
-        <a href="https://wa.me/8801XXXXXXXXX" class="border border-[#bf953f]/50 text-[#bf953f] px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-[#bf953f] hover:text-black transition duration-500">Concierge</a>
+    </div>
+
+    <nav class="bg-white sticky top-0 z-50 shadow-sm px-10 py-4 flex justify-between items-center border-b-2 border-[#bf953f]">
+        <div class="flex items-center space-x-2">
+            <span class="text-3xl font-bold tiens-blue bg-clip-text text-transparent italic serif">TITAN</span>
+            <span class="text-xs text-gray-400 border-l pl-2 font-light">Official Tiens <br> Partner</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#products" class="nav-link">Wellness Products</a>
+            <a href="#" class="nav-link">Business Opportunity</a>
+            <a href="#" class="nav-link">About Tiens</a>
+        </div>
+        <a href="https://wa.me/8801XXXXXXXXX" class="tiens-green text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-green-700 transition">Contact Advisor</a>
     </nav>
 
-    <header class="relative py-28 text-center px-6">
-        <div class="mb-6 inline-block py-1 px-5 border border-[#bf953f]/20 rounded-full text-[9px] uppercase tracking-[0.6em] text-[#bf953f]">Excellence in Health</div>
-        <h1 class="text-5xl md:text-8xl serif mb-8 leading-tight tracking-tight">
-            Elevating Your <br> <span class="gold-gradient italic">Wellness Standards.</span>
-        </h1>
-        <p class="max-w-3xl mx-auto text-gray-400 font-extralight text-lg mb-12 leading-relaxed tracking-wide">
-            Official Portal of <span class="text-white">TITAN</span>. Committed to excellence and global innovation. We empower lives through premium Tiens solutions.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-            <a href="#products" class="gold-bg text-black px-12 py-4 text-xs font-bold uppercase tracking-[0.3em] hover:brightness-110 transition shadow-2xl">View Collection</a>
-            <span class="text-gray-500 text-[10px] uppercase tracking-[0.4em]">Strategic Partner of Tiens Global</span>
+    <header class="hero-bg h-[500px] flex items-center justify-center text-center text-white px-6">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Harmony of Nature & Science</h1>
+            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">TITAN brings you the legendary healthcare solutions of Tiens Group to empower your life.</p>
+            <div class="flex justify-center gap-4">
+                <button class="bg-[#bf953f] px-8 py-3 rounded text-sm font-bold uppercase">Shop Now</button>
+                <button class="border-2 border-white px-8 py-3 rounded text-sm font-bold uppercase hover:bg-white hover:text-black transition">Learn More</button>
+            </div>
         </div>
     </header>
 
-    <section id="products" class="px-10 py-24">
-        <div class="text-center mb-20">
-            <h2 class="text-3xl serif gold-gradient tracking-[0.2em]">Our Signature Solutions</h2>
-            <div class="h-[1px] w-20 bg-[#bf953f] mx-auto mt-4"></div>
+    <section id="products" class="py-20 px-10 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Core Health Solutions</h2>
+            <p class="text-gray-500 italic">Based on 5000 years of Traditional Chinese Wisdom</p>
         </div>
-        
-        <div class="grid md:grid-cols-3 gap-10">
-            <div class="card-blur p-10 text-left">
-                <h3 class="text-xl serif mb-4">Cellular Nutrition</h3>
-                <p class="text-gray-500 text-sm font-light leading-loose mb-6">High-performance calcium and nutrient formulations to rebuild your body's foundation.</p>
-                <div class="text-[10px] text-[#bf953f] tracking-widest uppercase font-semibold">Tiens Certified</div>
-            </div>
-            
-            <div class="card-blur p-10 text-left">
-                <h3 class="text-xl serif mb-4">Bio-Tech Devices</h3>
-                <p class="text-gray-500 text-sm font-light leading-loose mb-6">Integrating advanced frequency therapy for superior blood circulation and recovery.</p>
-                <div class="text-[10px] text-[#bf953f] tracking-widest uppercase font-semibold">Innovation Series</div>
-            </div>
 
-            <div class="card-blur p-10 text-left">
-                <h3 class="text-xl serif mb-4">Immune Defense</h3>
-                <p class="text-gray-500 text-sm font-light leading-loose mb-6">Rare natural extracts refined through modern science to fortify your life.</p>
-                <div class="text-[10px] text-[#bf953f] tracking-widest uppercase font-semibold">Global Standards</div>
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="product-card p-6 text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-blue-600 text-2xl">B</div>
+                <h3 class="font-bold text-lg mb-2">Balance</h3>
+                <p class="text-xs text-gray-500">Regulating body functions with Spirulina and Cordyceps.</p>
+            </div>
+            <div class="product-card p-6 text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-green-600 text-2xl">C</div>
+                <h3 class="font-bold text-lg mb-2">Cleanse</h3>
+                <p class="text-xs text-gray-500">Detoxifying your system with Lipid Tea and Chitosan.</p>
+            </div>
+            <div class="product-card p-6 text-center">
+                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-red-600 text-2xl">R</div>
+                <h3 class="font-bold text-lg mb-2">Replenish</h3>
+                <p class="text-xs text-gray-500">Boosting nutrition with high-quality Nutrient Calcium.</p>
+            </div>
+            <div class="product-card p-6 text-center border-2 border-[#bf953f]">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-[#bf953f] text-2xl">P</div>
+                <h3 class="font-bold text-lg mb-2">Prevent</h3>
+                <p class="text-xs text-gray-500">Advanced bio-electric devices for total body recovery.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 border-t border-white/5 text-center bg-[#020202]">
-        <div class="text-2xl serif gold-gradient mb-6 tracking-[0.3em]">TITAN OFFICIAL</div>
-        <div class="text-gray-400 text-xs font-light mb-10">
-            Contact: titanofficials595@gmail.com<br>
-            Location: Bangladesh
+    <footer class="bg-gray-900 text-gray-400 py-16 px-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <h4 class="text-white font-bold mb-6 text-xl serif">TITAN <span class="text-[#bf953f]">Official</span></h4>
+                <p class="text-sm leading-relaxed">Dedicated to the vision of Tiens Group: Better Health, Better Future. We provide premium service in Bangladesh.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Quick Links</h4>
+                <ul class="text-xs space-y-3">
+                    <li><a href="#" class="hover:text-white transition">Product Catalog</a></li>
+                    <li><a href="#" class="hover:text-white transition">Join Our Team</a></li>
+                    <li><a href="#" class="hover:text-white transition">Tiens Global News</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Inquiry</h4>
+                <p class="text-xs mb-4">Email: titanofficials595@gmail.com</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <span class="p-2 border border-gray-700 rounded text-xs">FB</span>
+                    <span class="p-2 border border-gray-700 rounded text-xs">WA</span>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-center space-x-8 mb-12">
-            <a href="https://wa.me/8801XXXXXXXXX" class="text-[10px] uppercase tracking-widest border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">WhatsApp</a>
-            <a href="https://facebook.com" class="text-[10px] uppercase tracking-widest border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">Facebook</a>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-[10px] uppercase tracking-widest">
+            &copy; 2026 TITAN Global | Inspired by Tiens Health Industry
         </div>
-        <p class="text-[9px] text-gray-700 tracking-[0.5em] uppercase">&copy; 2026 TITAN Global. All Rights Reserved.</p>
     </footer>
+
 </body>
-                </html>
+                    </html>
