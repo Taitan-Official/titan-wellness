@@ -3,32 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITAN | Premium Wellness & Innovation</title>
+    <title>TITAN | Premium Wellness Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #050505; color: #ffffff; }
-        .serif { font-family: 'Playfair Display', serif; }
-        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F1D592 50%, #B8860B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .gold-bg { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
+        body { font-family: 'Montserrat', sans-serif; background-color: #030303; color: #ffffff; overflow-x: hidden; }
+        .serif { font-family: 'Cinzel', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gold-bg { background: linear-gradient(135deg, #bf953f, #b38728); }
+        .card-blur { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(191, 149, 63, 0.15); transition: all 0.4s ease; }
+        .card-blur:hover { border-color: #bf953f; transform: translateY(-10px); background: rgba(191, 149, 63, 0.05); }
+        .hero-glow { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 80%; height: 500px; background: radial-gradient(circle, rgba(191, 149, 63, 0.1) 0%, transparent 70%); z-index: -1; }
     </style>
 </head>
 <body>
-    <nav class="flex justify-between items-center px-8 py-6 border-b border-gray-900 sticky top-0 bg-[#050505] z-50">
-        <div class="text-2xl font-bold tracking-tighter serif"><span class="gold-gradient text-3xl">TITAN</span> GLOBAL</div>
-        <button class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 text-[10px] uppercase tracking-widest hover:bg-[#D4AF37] hover:text-black transition">Elite Access</button>
+    <div class="hero-glow"></div>
+
+    <nav class="flex justify-between items-center px-10 py-8 sticky top-0 bg-[#030303]/90 backdrop-blur-md z-50 border-b border-white/5">
+        <div class="text-3xl font-bold tracking-[0.2em] serif gold-gradient">TITAN</div>
+        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.3em] font-light text-gray-400">
+            <a href="#about" class="hover:text-[#bf953f] transition">Vision</a>
+            <a href="#products" class="hover:text-[#bf953f] transition">Solutions</a>
+            <a href="#contact" class="hover:text-[#bf953f] transition">Connect</a>
+        </div>
+        <a href="https://wa.me/8801XXXXXXXXX" class="border border-[#bf953f]/50 text-[#bf953f] px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-[#bf953f] hover:text-black transition duration-500">Concierge</a>
     </nav>
 
-    <header class="py-24 text-center px-4">
-        <h1 class="text-5xl md:text-7xl serif mb-6">Innovating <span class="gold-gradient italic">Global Health.</span></h1>
-        <p class="max-w-2xl mx-auto text-gray-400 font-light text-lg mb-10 leading-relaxed">
-            Official Premium Portal of TITAN. Committed to excellence and health, inspired by a vision to empower lives through Tiens solutions.
+    <header class="relative py-28 text-center px-6">
+        <div class="mb-6 inline-block py-1 px-5 border border-[#bf953f]/20 rounded-full text-[9px] uppercase tracking-[0.6em] text-[#bf953f]">Excellence in Health</div>
+        <h1 class="text-5xl md:text-8xl serif mb-8 leading-tight tracking-tight">
+            Elevating Your <br> <span class="gold-gradient italic">Wellness Standards.</span>
+        </h1>
+        <p class="max-w-3xl mx-auto text-gray-400 font-extralight text-lg mb-12 leading-relaxed tracking-wide">
+            Official Portal of <span class="text-white">TITAN</span>. Committed to excellence and global innovation. We empower lives through premium Tiens solutions.
         </p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            <a href="#products" class="gold-bg text-black px-12 py-4 text-xs font-bold uppercase tracking-[0.3em] hover:brightness-110 transition shadow-2xl">View Collection</a>
+            <span class="text-gray-500 text-[10px] uppercase tracking-[0.4em]">Strategic Partner of Tiens Global</span>
+        </div>
     </header>
 
-    <footer class="py-16 border-t border-gray-900 text-center bg-[#050505]">
-        <p class="text-xs text-gray-600 tracking-[0.3em] uppercase mb-4">&copy; 2026 TITAN Global x Tiens Partners</p>
-        <p class="text-gray-400 text-sm mb-6">Contact: titanofficials595@gmail.com</p>
+    <section id="products" class="px-10 py-24">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl serif gold-gradient tracking-[0.2em]">Our Signature Solutions</h2>
+            <div class="h-[1px] w-20 bg-[#bf953f] mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="card-blur p-10 text-left">
+                <h3 class="text-xl serif mb-4">Cellular Nutrition</h3>
+                <p class="text-gray-500 text-sm font-light leading-loose mb-6">High-performance calcium and nutrient formulations to rebuild your body's foundation.</p>
+                <div class="text-[10px] text-[#bf953f] tracking-widest uppercase font-semibold">Tiens Certified</div>
+            </div>
+            
+            <div class="card-blur p-10 text-left">
+                <h3 class="text-xl serif mb-4">Bio-Tech Devices</h3>
+                <p class="text-gray-500 text-sm font-light leading-loose mb-6">Integrating advanced frequency therapy for superior blood circulation and recovery.</p>
+                <div class="text-[10px] text-[#bf953f] tracking-widest uppercase font-semibold">Innovation Series</div>
+            </div>
+
+            <div class="card-blur p-10 text-left">
+                <h3 class="text-xl serif mb-4">Immune Defense</h3>
+                <p class="text-gray-500 text-sm font-light leading-loose mb-6">Rare natural extracts refined through modern science to fortify your life.</p>
+                <div class="text-[10px] text-[#bf953f] tracking-widest uppercase font-semibold">Global Standards</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 border-t border-white/5 text-center bg-[#020202]">
+        <div class="text-2xl serif gold-gradient mb-6 tracking-[0.3em]">TITAN OFFICIAL</div>
+        <div class="text-gray-400 text-xs font-light mb-10">
+            Contact: titanofficials595@gmail.com<br>
+            Location: Bangladesh
+        </div>
+        <div class="flex justify-center space-x-8 mb-12">
+            <a href="https://wa.me/8801XXXXXXXXX" class="text-[10px] uppercase tracking-widest border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">WhatsApp</a>
+            <a href="https://facebook.com" class="text-[10px] uppercase tracking-widest border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">Facebook</a>
+        </div>
+        <p class="text-[9px] text-gray-700 tracking-[0.5em] uppercase">&copy; 2026 TITAN Global. All Rights Reserved.</p>
     </footer>
 </body>
-</html>
+                </html>
