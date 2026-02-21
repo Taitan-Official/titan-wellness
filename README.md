@@ -18,13 +18,13 @@ We offer a curated selection of Tiens' most prestigious solutions:
 * **🧬 High-Performance Supplements:** Nutrient Calcium, Cordyceps, Spirulina, and Zinc Plus.
 * **🧴 Elite Personal Care:** Orecare Herbal solutions, AiRiZ healthcare, and luxury skin treats.
 * **⚡ Advanced Appliances:** Blood Circulative Massagers (BCM) and Head Care Apparatus.
-* **🏡 Purified Living:** Multi-function purifiers for a toxic-free home environment.
+* **🏡 Purified Living:** Multi-function purifiers for a toxin-free home environment.
 
 ---
 
 ## 🌐 Digital Presence
 Explore our high-end wellness portal for a seamless experience:
-👉 **[TITAN Premium Portal](https://taitan-official.github.io/titan-wellness/)**
+👉 **[TITAN Premium Portal](https://titan-wellness.github.io/titan-wellness/)**
 
 ---
 
@@ -35,13 +35,13 @@ Connect with our elite health advisors for personalized wellness strategies.
 | :--- | :--- | :--- |
 | **📱 Hotline** | **+880 1636-421393** | [Call Now](tel:01636421393) |
 | **💬 WhatsApp** | **Official Business Line** | [Start Chat](https://wa.me/8801636421393) |
-| **📧 Email** | **titanofficials595@gmail.com** | [Send Mail](mailto:titanofficials393@gmail.com) |
+| **📧 Email** | **taitanofficials393@gmail.com** | [Send Mail](mailto:taitanofficials393@gmail.com) |
 
 ---
 
 ## 📊 Performance Statistics
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Taitan-Official&show_icons=true&theme=dark&hide_border=true&bg_color=050505&title_color=bf953f&icon_color=bf953f&text_color=ffffff" alt="TITAN Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=TITAN-Wellness&show_icons=true&theme=dark&hide_border=true&bg_color=050505&title_color=bf953f&icon_color=bf953f&text_color=ffffff" alt="TITAN Stats" />
 </p>
 
 ---
