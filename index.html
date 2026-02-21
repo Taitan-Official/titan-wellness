@@ -3,159 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITAN | Official Tiens Store</title>
+    <title>TITAN | Official Tiens Partner</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; background: #f9fafb; scroll-behavior: smooth; }
+        body { font-family: 'Roboto', sans-serif; background: #f4f7f6; }
         .tiens-green { color: #008751; }
         .bg-tiens-green { background-color: #008751; }
-        .hero-banner {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://tiens.com.bd/wp-content/uploads/2021/03/tiens-bg.jpg');
-            background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; border-radius: 0 0 30px 30px;
-        }
-        .product-card { background: white; border-radius: 15px; border: 1px solid #eee; transition: 0.3s; height: 100%; display: flex; flex-direction: column; overflow: hidden; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: #008751; }
-        .product-img { height: 160px; width: 100%; object-fit: contain; padding: 15px; background: #fff; }
-        .price-tag { color: #d32f2f; font-weight: bold; font-size: 1rem; }
-        .order-btn { background: #008751; color: white; padding: 12px; text-align: center; font-weight: bold; border-radius: 0 0 15px 15px; width: 100%; margin-top: auto; }
-        .cat-title { border-left: 5px solid #008751; padding-left: 15px; margin: 40px 0 20px 0; font-size: 1.4rem; font-weight: bold; color: #333; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://tiens.com.bd/wp-content/uploads/2021/03/tiens-bg.jpg'); background-size: cover; background-position: center; height: 350px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-bottom: 40px; }
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .img-box { background: #fff; height: 220px; padding: 20px; display: flex; align-items: center; justify-content: center; }
+        .img-box img { max-height: 100%; object-fit: contain; }
+        .desc-text { font-size: 0.85rem; color: #555; line-height: 1.5; margin-top: 10px; }
+        .order-btn { background: #008751; color: white; padding: 14px; text-align: center; font-weight: bold; cursor: pointer; border: none; width: 100%; transition: 0.3s; }
+        .order-btn:hover { background: #006b40; }
+        .section-header { font-size: 1.8rem; font-weight: bold; color: #333; margin-bottom: 30px; border-left: 6px solid #008751; padding-left: 15px; }
     </style>
 </head>
 <body>
 
-    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+    <nav class="bg-white sticky top-0 z-50 shadow-sm px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-3">
-            <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Logo.png" class="h-8 md:h-10">
-            <div class="h-8 w-[1px] bg-gray-300"></div>
-            <h1 class="text-2xl font-bold tiens-green italic tracking-tighter">TITAN</h1>
+            <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Logo.png" class="h-10">
+            <h1 class="text-2xl font-bold tiens-green italic border-l-2 border-gray-200 pl-3">TITAN</h1>
         </div>
-        <a href="tel:01636421393" class="bg-tiens-green text-white px-5 py-2 rounded-full text-xs font-bold">Call: 01636421393</a>
+        <a href="tel:01636421393" class="bg-tiens-green text-white px-6 py-2 rounded-full font-bold text-sm shadow-md">Call: 01636421393</a>
     </nav>
 
-    <header class="hero-banner px-6 shadow-lg">
+    <section class="hero px-6">
         <div>
-            <h2 class="text-3xl md:text-5xl font-bold mb-3 drop-shadow-lg">Better Tiens, Better Life</h2>
-            <p class="text-sm md:text-lg font-light opacity-90">সুস্বাস্থ্য ও সমৃদ্ধির পথে আপনার বিশ্বস্ত সঙ্গী</p>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Better Tiens, Better Life</h2>
+            <p class="text-lg md:text-xl font-light opacity-90">স্বাস্থ্যের সঠিক যত্ন নিন বিশ্বের সেরা সাপ্লিমেন্টের মাধ্যমে</p>
         </div>
-    </header>
+    </section>
 
-    <div class="max-w-7xl mx-auto px-6 pb-20">
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        
+        <h2 class="section-header">স্বাস্থ্য সাপ্লিমেন্ট (Health Food)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-        <h2 class="cat-title uppercase">১. হেলথ ফুড ও সাপ্লিমেন্ট</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Nutrient-Super-Calcium-Powder.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Super Calcium Powder</h3><p class="price-tag mt-2">৳ ২,০৩১.৭৫</p></div>
-                <button onclick="sendOrder('Calcium Powder')" class="order-btn">অর্ডার</button>
+                <div class="img-box"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Nutrient-Super-Calcium-Powder.jpg"></div>
+                <div class="p-6 flex-grow">
+                    <h3 class="font-bold text-xl text-gray-800">Super Calcium Powder</h3>
+                    <p class="text-red-600 font-bold text-lg mt-1">৳ ২,০৩১.৭৫</p>
+                    <div class="desc-text">
+                        <strong>উপকারিতা:</strong>
+                        <ul class="list-disc ml-4 mt-2">
+                            <li>হাড়ের ঘনত্ব বাড়াতে এবং হাড় ক্ষয় রোধ করতে সাহায্য করে।</li>
+                            <li>দাঁত মজবুত করে এবং পেশির খিঁচুনি দূর করে।</li>
+                            <li>অস্টিওপোরোসিস এর মতো জটিল সমস্যা প্রতিরোধে অত্যন্ত কার্যকর।</li>
+                            <li>শরীরের ক্যালসিয়ামের অভাব দ্রুত পূরণ করে।</li>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="order('Calcium Powder')" class="order-btn">অর্ডার করুন</button>
             </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Super-Calcium-Capsules-with-Lecithin.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Calcium with Lecithin</h3><p class="price-tag mt-2">৳ ৩,১৬০.৫০</p></div>
-                <button onclick="sendOrder('Lecithin')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Super-Calcium-Powder-for-Children.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Calcium for Children</h3><p class="price-tag mt-2">৳ ১,৯১৮.৮৮</p></div>
-                <button onclick="sendOrder('Children Calcium')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordyceps-Capsule.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Cordyceps Capsules</h3><p class="price-tag mt-2">৳ ৪,২৮৯.২৫</p></div>
-                <button onclick="sendOrder('Cordyceps')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Zinc-Capsule.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Zincplus (Honey)</h3><p class="price-tag mt-2">৳ ২,৪৮৩.২৫</p></div>
-                <button onclick="sendOrder('Zincplus')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Spirulina-Capsule.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Spirulina Capsules</h3><p class="price-tag mt-2">৳ ৩,১৬০.৫০</p></div>
-                <button onclick="sendOrder('Spirulina')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Chitosan-Capsule.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Chitosan Capsules</h3><p class="price-tag mt-2">৳ ৪,৪০২.১৩</p></div>
-                <button onclick="sendOrder('Chitosan')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Vitality-Softgels.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Cell Rejuvenation</h3><p class="price-tag mt-2">৳ ৪,২৮৯.২৫</p></div>
-                <button onclick="sendOrder('Cell Rejuvenation')" class="order-btn">অর্ডার</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Lipid-Metabolic-Management-Tea.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Lipid Metabolic Tea</h3><p class="price-tag mt-2">৳ ২,৩৭০.৩৮</p></div>
-                <button onclick="sendOrder('Lipid Tea')" class="order-btn">অর্ডার</button>
-            </div>
-        </div>
 
-        <h2 class="cat-title uppercase">২. ড্রিংকস ও পানীয়</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordycafe.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Cordycafe (No Sugar)</h3><p class="price-tag mt-2">৳ ১,১৮৫.১৯</p></div>
-                <button onclick="sendOrder('Cordycafe No Sugar')" class="order-btn">অর্ডার</button>
+                <div class="img-box"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordyceps-Capsule.jpg"></div>
+                <div class="p-6 flex-grow">
+                    <h3 class="font-bold text-xl text-gray-800">Cordyceps Capsules</h3>
+                    <p class="text-red-600 font-bold text-lg mt-1">৳ ৪,২৮৯.২৫</p>
+                    <div class="desc-text">
+                        <strong>উপকারিতা:</strong>
+                        <ul class="list-disc ml-4 mt-2">
+                            <li>কিডনি এবং ফুসফুসের কার্যক্ষমতা বৃদ্ধি করে।</li>
+                            <li>শরীরের রোগ প্রতিরোধ ক্ষমতা (Immunity) শক্তিশালী করে।</li>
+                            <li>শ্বাসকষ্ট ও অ্যাজমার সমস্যায় বিশেষ উপকারী।</li>
+                            <li>প্রাকৃতিক অ্যান্টি-বায়োটিক হিসেবে কাজ করে এবং ক্লান্তি দূর করে।</li>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="order('Cordyceps')" class="order-btn">অর্ডার করুন</button>
             </div>
+
             <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordycafe.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Cordycafe (With Sugar)</h3><p class="price-tag mt-2">৳ ১,৫৮০.২৫</p></div>
-                <button onclick="sendOrder('Cordycafe Sugar')" class="order-btn">অর্ডার</button>
+                <div class="img-box"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Zinc-Capsule.jpg"></div>
+                <div class="p-6 flex-grow">
+                    <h3 class="font-bold text-xl text-gray-800">Zinc Plus Capsules</h3>
+                    <p class="text-red-600 font-bold text-lg mt-1">৳ ২,৪৮৩.২৫</p>
+                    <div class="desc-text">
+                        <strong>উপকারিতা:</strong>
+                        <ul class="list-disc ml-4 mt-2">
+                            <li>শরীরের সঠিক বৃদ্ধি ও বিকাশে সাহায্য করে।</li>
+                            <li>খাবারে অরুচি দূর করে এবং দৃষ্টিশক্তি উন্নত করে।</li>
+                            <li>প্রজনন ক্ষমতা বৃদ্ধি এবং হরমোনের ভারসাম্য রক্ষা করে।</li>
+                            <li>চুল পড়া রোধ করতে এবং ত্বকের সজীবতা বজায় রাখে।</li>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="order('Zinc Plus')" class="order-btn">অর্ডার করুন</button>
             </div>
+
         </div>
 
-        <h2 class="cat-title uppercase">৩. পার্সোনাল কেয়ার</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <h2 class="section-header mt-20">প্রিমিয়াম হেলথ ইকুইপমেন্ট</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Orecare-Chinese-Herbal-Toothpaste.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">Herbal Toothpaste</h3><p class="price-tag mt-2">৳ ৬২০.৮২</p></div>
-                <button onclick="sendOrder('Toothpaste')" class="order-btn">অর্ডার</button>
+                <div class="img-box h-72"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Blood-Circulation-Massager.jpg"></div>
+                <div class="p-8 flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-800">Blood Circulative Massager (BCM)</h3>
+                    <p class="text-red-600 text-2xl font-bold mt-2">৳ ৬৭,৭২৫.০০</p>
+                    <p class="desc-text mt-4">
+                        <strong>বিস্তারিত:</strong><br>
+                        BCM মেশিন হলো আধুনিক প্রযুক্তির এক অনন্য উদ্ভাবন। এটি হাই-ফ্রিকোয়েন্সি ভাইব্রেশনের মাধ্যমে শরীরের প্রতিটি শিরা ও উপশিরায় রক্ত সঞ্চালন বৃদ্ধি করে। <br><br>
+                        ১. উচ্চ রক্তচাপ ও ডায়াবেটিস নিয়ন্ত্রণে সাহায্য করে।<br>
+                        ২. শরীরের মেদ কমাতে এবং বাত-ব্যথা দূর করতে কার্যকর।<br>
+                        ৩. প্যারালাইসিস রোগীদের পুনর্গঠনে বিশেষ ভূমিকা রাখে।<br>
+                        ৪. মাত্র ১৫ মিনিট ব্যবহারে ৫ কিমি হাঁটার সমান উপকার পাওয়া যায়।
+                    </p>
+                </div>
+                <button onclick="order('BCM Machine')" class="order-btn py-5 text-xl">বুকিং দিন</button>
             </div>
             <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Airiz-Sanitary-Napkin.jpg" class="product-img">
-                <div class="p-4 flex-grow text-center"><h3 class="font-bold text-sm">AiRiZ Sanitary Napkin</h3><p class="price-tag mt-2">Premium Quality</p></div>
-                <button onclick="sendOrder('AiRiZ')" class="order-btn">অর্ডার</button>
+                <div class="img-box h-72"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Head-Care-Apparatus.jpg"></div>
+                <div class="p-8 flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-800">Head Care Apparatus</h3>
+                    <p class="text-red-600 text-2xl font-bold mt-2">৳ ১৮,০৬০.০০</p>
+                    <p class="desc-text mt-4">
+                        <strong>বিস্তারিত:</strong><br>
+                        এটি একটি বহুমুখী লেজার থেরাপি ডিভাইস যা মূলত হাই-ব্লাড প্রেশার স্বাভাবিক করতে ব্যবহৃত হয়।<br><br>
+                        ১. মাথা ব্যথ্যা ও মাইগ্রেনের সমস্যা দ্রুত দূর করে।<br>
+                        ২. হার্টের ব্লক ঝুঁকি কমাতে এবং ব্রেইন স্ট্রোক প্রতিরোধে কাজ করে।<br>
+                        ৩. লেজার থেরাপির মাধ্যমে চুলের গোড়া মজবুত করে এবং চুল পড়া কমায়।<br>
+                        ৪. এটি শরীরের যেকোনো অংশে মেসেজ থেরাপি হিসেবে ব্যবহার করা যায়।
+                    </p>
+                </div>
+                <button onclick="order('Head Care Apparatus')" class="order-btn py-5 text-xl">বুকিং দিন</button>
             </div>
         </div>
 
-        <h2 class="cat-title uppercase">৪. হেলথ অ্যাপ্লায়েন্স (যন্ত্র)</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Blood-Circulation-Massager.jpg" class="h-64 object-contain p-4">
-                <div class="p-6 text-center"><h3 class="text-xl font-bold">BCM Massager Machine</h3><p class="text-red-600 text-2xl font-bold mt-2">৳ ৬৭,৭২৫.০০</p></div>
-                <button onclick="sendOrder('BCM Machine')" class="order-btn py-4">এখনই বুকিং দিন</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Head-Care-Apparatus.jpg" class="h-64 object-contain p-4">
-                <div class="p-6 text-center"><h3 class="text-xl font-bold">Headcare Apparatus</h3><p class="text-red-600 text-2xl font-bold mt-2">৳ ১৮,০৬০.০০</p></div>
-                <button onclick="sendOrder('Headcare')" class="order-btn py-4">এখনই বুকিং দিন</button>
-            </div>
-            <div class="product-card">
-                <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Fruit-Vegetable-Cleaner.jpg" class="h-64 object-contain p-4">
-                <div class="p-6 text-center"><h3 class="text-xl font-bold">Fruit & Vegetable Purifier</h3><p class="text-red-600 text-2xl font-bold mt-2">৳ ১৬,৯৩১.২৫</p></div>
-                <button onclick="sendOrder('Fruit Purifier')" class="order-btn py-4">এখনই বুকিং দিন</button>
-            </div>
-        </div>
+    </main>
 
-    </div>
-
-    <footer class="bg-slate-900 text-white py-16 text-center">
-        <h2 class="text-3xl font-bold tiens-green italic mb-4">TITAN OFFICIAL</h2>
-        <p class="text-xs text-gray-500 mb-8">Authorized Distributor | Tiens Bangladesh</p>
-        <div class="flex flex-col md:flex-row justify-center gap-10 text-sm">
-            <p>Hotline: 01636-421393</p>
+    <footer class="bg-gray-900 text-white py-16 text-center">
+        <h2 class="text-3xl font-bold tiens-green italic mb-4">TITAN GLOBAL</h2>
+        <p class="text-gray-400 text-sm max-w-md mx-auto mb-8">আমরা দীর্ঘকাল ধরে টিয়েন্সের মানসম্মত পণ্য সরাসরি কাস্টমারের কাছে পৌঁছে দিচ্ছি।</p>
+        <div class="flex flex-col md:flex-row justify-center gap-10 font-bold border-t border-gray-800 pt-10">
+            <p>Call: 01636-421393</p>
             <p>WhatsApp: 01636-421393</p>
         </div>
     </footer>
 
     <script>
-        function sendOrder(p) {
-            const n = prompt("আপনার নাম:");
-            const a = prompt("ঠিকানা:");
-            if(n && a) {
-                const msg = `*New Order (TITAN)*%0AProduct: ${p}%0AName: ${n}%0AAddress: ${a}`;
-                window.open("https://wa.me/8801636421393?text=" + msg);
+        function order(p) {
+            const name = prompt("আপনার নাম:");
+            const addr = prompt("ডেলিভারি ঠিকানা:");
+            if(name && addr) {
+                const text = `*নতুন অর্ডার (TITAN)*%0A-----------------%0A*প্রোডাক্ট:* ${p}%0A*ক্রেতার নাম:* ${name}%0A*ঠিকানা:* ${addr}%0A-----------------%0Aআমি এটি কিনতে আগ্রহী।`;
+                window.open("https://wa.me/8801636421393?text=" + text);
             }
         }
     </script>
