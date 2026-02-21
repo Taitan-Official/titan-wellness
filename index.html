@@ -1,113 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITAN | Official Tiens Partner Portal</title>
+    <title>TITAN | Tiens Full Product Catalog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Roboto', sans-serif; background-color: #f8f9fa; color: #333; }
-        .tiens-blue { background-color: #0056b3; } /* Tiens standard blue */
-        .tiens-green { background-color: #28a745; }
-        .gold-text { color: #bf953f; }
-        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.tiens.com/Public/Home/images/banner1.jpg'); background-size: cover; background-position: center; }
-        .nav-link:hover { color: #bf953f; border-bottom: 2px solid #bf953f; }
-        .product-card { background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-        .product-card:hover { transform: translateY(-5px); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; margin: 0; }
+        .tiens-blue { color: #0056b3; }
+        .tiens-bg-blue { background-color: #0056b3; }
+        .tiens-bg-green { background-color: #28a745; }
+        
+        .product-card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #f1f5f9; display: flex; flex-direction: column; height: 100%; }
+        .product-card:hover { transform: translateY(-7px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        
+        .product-image { width: 100%; height: 200px; background-color: #ffffff; display: flex; align-items: center; justify-content: center; padding: 15px; }
+        .product-image img { max-height: 100%; max-width: 100%; object-fit: contain; }
+
+        .gold-badge { background: linear-gradient(135deg, #bf953f, #aa771c); color: white; padding: 3px 10px; border-radius: 50px; font-size: 0.65rem; font-weight: bold; position: absolute; top: 12px; left: 12px; z-index: 10; }
+        .category-header { border-left: 6px solid #bf953f; padding-left: 15px; margin: 60px 0 30px 0; font-weight: bold; color: #1e293b; }
+        .btn-wa { background-color: #25D366; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.8rem; margin-top: auto; }
     </style>
 </head>
 <body>
 
-    <div class="tiens-blue text-white text-[11px] py-2 px-10 flex justify-between items-center">
-        <span>Global Network | Bangladesh Office</span>
-        <div class="space-x-4">
-            <span>Email: titanofficials595@gmail.com</span>
-        </div>
-    </div>
-
-    <nav class="bg-white sticky top-0 z-50 shadow-sm px-10 py-4 flex justify-between items-center border-b-2 border-[#bf953f]">
+    <nav class="bg-white sticky top-0 z-50 shadow-sm px-6 py-4 flex justify-between items-center border-b border-gray-100">
         <div class="flex items-center space-x-2">
-            <span class="text-3xl font-bold tiens-blue bg-clip-text text-transparent italic serif">TITAN</span>
-            <span class="text-xs text-gray-400 border-l pl-2 font-light">Official Tiens <br> Partner</span>
+            <span class="text-2xl font-bold tiens-blue italic tracking-tighter">TITAN</span>
+            <span class="text-[8px] text-gray-400 border-l pl-2 leading-tight uppercase font-bold">Official Tiens <br> Partner</span>
         </div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#products" class="nav-link">Wellness Products</a>
-            <a href="#" class="nav-link">Business Opportunity</a>
-            <a href="#" class="nav-link">About Tiens</a>
-        </div>
-        <a href="https://wa.me/8801XXXXXXXXX" class="tiens-green text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-green-700 transition">Contact Advisor</a>
+        <a href="https://wa.me/8801XXXXXXXXX" class="tiens-bg-green text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-green-700 transition">অর্ডার করুন</a>
     </nav>
 
-    <header class="hero-bg h-[500px] flex items-center justify-center text-center text-white px-6">
-        <div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Harmony of Nature & Science</h1>
-            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">TITAN brings you the legendary healthcare solutions of Tiens Group to empower your life.</p>
-            <div class="flex justify-center gap-4">
-                <button class="bg-[#bf953f] px-8 py-3 rounded text-sm font-bold uppercase">Shop Now</button>
-                <button class="border-2 border-white px-8 py-3 rounded text-sm font-bold uppercase hover:bg-white hover:text-black transition">Learn More</button>
+    <div class="max-w-7xl mx-auto px-6 pb-20">
+        
+        <h2 class="category-header text-2xl uppercase">১. স্বাস্থ্য সাপ্লিমেন্ট (Health Food)</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="product-card relative">
+                <span class="gold-badge">Top Selection</span>
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Nutrient-Super-Calcium-Powder.jpg" alt="Calcium"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">Tiens Super Calcium</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">হাড় মজবুত ও ক্যালসিয়ামের অভাব পূরণে বিশ্বের ১ নম্বর সাপ্লিমেন্ট।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <section id="products" class="py-20 px-10 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Core Health Solutions</h2>
-            <p class="text-gray-500 italic">Based on 5000 years of Traditional Chinese Wisdom</p>
-        </div>
-
-        <div class="grid md:grid-cols-4 gap-6">
-            <div class="product-card p-6 text-center">
-                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-blue-600 text-2xl">B</div>
-                <h3 class="font-bold text-lg mb-2">Balance</h3>
-                <p class="text-xs text-gray-500">Regulating body functions with Spirulina and Cordyceps.</p>
+            <div class="product-card">
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordyceps-Capsule.jpg" alt="Cordyceps"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">Tiens Cordyceps</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">ফুসফুস, কিডনি এবং রোগ প্রতিরোধ ক্ষমতা বৃদ্ধিতে জাদুকরী কার্যকর।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
+                </div>
             </div>
-            <div class="product-card p-6 text-center">
-                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-green-600 text-2xl">C</div>
-                <h3 class="font-bold text-lg mb-2">Cleanse</h3>
-                <p class="text-xs text-gray-500">Detoxifying your system with Lipid Tea and Chitosan.</p>
+            <div class="product-card">
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Spirulina-Capsule.jpg" alt="Spirulina"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">Tiens Spirulina</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">প্রাকৃতিক ভিটামিন ও খনিজ উপাদানের সেরা উৎস। শরীরের ক্লান্তি দূর করে।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
+                </div>
             </div>
-            <div class="product-card p-6 text-center">
-                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-red-600 text-2xl">R</div>
-                <h3 class="font-bold text-lg mb-2">Replenish</h3>
-                <p class="text-xs text-gray-500">Boosting nutrition with high-quality Nutrient Calcium.</p>
-            </div>
-            <div class="product-card p-6 text-center border-2 border-[#bf953f]">
-                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-[#bf953f] text-2xl">P</div>
-                <h3 class="font-bold text-lg mb-2">Prevent</h3>
-                <p class="text-xs text-gray-500">Advanced bio-electric devices for total body recovery.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-900 text-gray-400 py-16 px-10">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
-            <div>
-                <h4 class="text-white font-bold mb-6 text-xl serif">TITAN <span class="text-[#bf953f]">Official</span></h4>
-                <p class="text-sm leading-relaxed">Dedicated to the vision of Tiens Group: Better Health, Better Future. We provide premium service in Bangladesh.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Quick Links</h4>
-                <ul class="text-xs space-y-3">
-                    <li><a href="#" class="hover:text-white transition">Product Catalog</a></li>
-                    <li><a href="#" class="hover:text-white transition">Join Our Team</a></li>
-                    <li><a href="#" class="hover:text-white transition">Tiens Global News</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Inquiry</h4>
-                <p class="text-xs mb-4">Email: titanofficials595@gmail.com</p>
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <span class="p-2 border border-gray-700 rounded text-xs">FB</span>
-                    <span class="p-2 border border-gray-700 rounded text-xs">WA</span>
+            <div class="product-card">
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Chitosan-Capsule.jpg" alt="Chitosan"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">Tiens Chitosan</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">ওজন নিয়ন্ত্রণ ও শরীর থেকে ক্ষতিকর টক্সিন বের করতে সহায়ক।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
                 </div>
             </div>
         </div>
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-[10px] uppercase tracking-widest">
-            &copy; 2026 TITAN Global | Inspired by Tiens Health Industry
+
+        <h2 class="category-header text-2xl uppercase">২. ব্যক্তিগত যত্ন (Personal Care)</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="product-card">
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Orecare-Chinese-Herbal-Toothpaste.jpg" alt="Toothpaste"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">Herbal Toothpaste</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">দাঁত ও মাড়ির সমস্যার স্থায়ী সমাধানে ১০০% হারবাল সমাধান।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Airiz-Sanitary-Napkin.jpg" alt="Airiz"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">AiRiZ Napkin</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">অ্যানায়ন টেকনোলজি সমৃদ্ধ, যা নারীদের স্বাস্থ্য সুরক্ষায় সেরা।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Spirulina-Handmade-Soap.jpg" alt="Soap"></div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="text-sm font-bold text-gray-800">Handmade Soap</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 mb-4">ত্বকের এলার্জি বা ব্রণের সমস্যায় স্পিরুলিনা মিশ্রিত সাবান।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">WhatsApp অর্ডার</a>
+                </div>
+            </div>
         </div>
+
+        <h2 class="category-header text-2xl uppercase">৩. হেলথ অ্যাপ্লায়েন্স (Equipment)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="product-card">
+                <div class="product-image p-8"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Blood-Circulation-Massager.jpg" alt="BCM"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-lg font-bold text-gray-800">BCM Massager</h3>
+                    <p class="text-xs text-gray-500 mt-3 mb-6">পুরো শরীরের রক্ত সঞ্চালন ঠিক করতে এবং দীর্ঘস্থায়ী সুস্থতায়।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">বুকিং দিন</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image p-8"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Head-Care-Apparatus.jpg" alt="Headcare"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-lg font-bold text-gray-800">Head Care Apparatus</h3>
+                    <p class="text-xs text-gray-500 mt-3 mb-6">উচ্চ রক্তচাপ নিয়ন্ত্রণ এবং মাইগ্রেনের যন্ত্রণায় ডিজিটাল সমাধান।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">বুকিং দিন</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image p-8"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Fruit-Vegetable-Cleaner.jpg" alt="Purifier"></div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-lg font-bold text-gray-800">Fruit Purifier</h3>
+                    <p class="text-xs text-gray-500 mt-3 mb-6">খাবার থেকে ফরমালিন ও বিষাক্ত কেমিক্যাল দূর করার যন্ত্র।</p>
+                    <a href="https://wa.me/8801XXXXXXXXX" class="btn-wa">বুকিং দিন</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white py-16 px-8 text-center mt-20">
+        <h2 class="text-3xl font-bold italic text-blue-400">TITAN GLOBAL</h2>
+        <p class="text-gray-400 text-[10px] mt-2 uppercase tracking-[0.5em]">Official Partner of Tiens Bangladesh</p>
+        <div class="h-[1px] w-20 bg-blue-500 mx-auto my-8"></div>
+        <p class="text-xs text-gray-400">Email: titanofficials595@gmail.com</p>
+        <p class="mt-8 text-[9px] text-gray-600 uppercase tracking-widest">&copy; 2026 TITAN. Inspired by Excellence.</p>
     </footer>
 
 </body>
-                    </html>
+    </html>
