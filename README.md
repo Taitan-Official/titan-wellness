@@ -35,7 +35,7 @@ Connect with our elite health advisors for personalized wellness strategies.
 | :--- | :--- | :--- |
 | **📱 Hotline** | **+880 1636-421393** | [Call Now](tel:01636421393) |
 | **💬 WhatsApp** | **Official Business Line** | [Start Chat](https://wa.me/8801636421393) |
-| **📧 Email** | **titanofficials595@gmail.com** | [Send Mail](mailto:titanofficials595@gmail.com) |
+| **📧 Email** | **titanofficials595@gmail.com** | [Send Mail](mailto:titanofficials393@gmail.com) |
 
 ---
 
