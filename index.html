@@ -3,67 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITAN | Health & Wellness</title>
+    <title>TITAN Bangladesh | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">HOME</a>
-  <a href="#">ABOUT TITAN</a>
-  <a href="health-food.html">PRODUCT</a>
-  <a href="#">BUSINESS OPPORTUNITY</a>
-  <a href="#">RULES OF DISTRIBUTOR</a>
-  <a href="tel:01636421393">CONTACT US</a>
-</div>
-<header>
-    <div class="header-container">
-        <span class="menu-icon" onclick="openNav()">&#9776;</span>
-        <div class="logo-text">TITAN</div>
-        <a href="#" class="sign-in">SIGN IN</a>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"><i class="fa fa-home"></i> হোম / মূল পাতা</a>
+        
+        <button class="dropdown-btn">পণ্য <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="health-food.html">স্বাস্থ্যকর খাদ্য</a>
+            <a href="#">স্বাস্থ্যসেবা সরঞ্জাম</a>
+            <a href="personal-care.html">ব্যক্তিগত যত্ন</a>
+            <a href="#">গৃহস্থালি যত্ন</a>
+        </div>
+
+        <a href="#about" onclick="closeNav()"><i class="fa fa-info-circle"></i> টাইটান সম্পর্কে</a>
+        <a href="#"><i class="fa fa-briefcase"></i> ব্যবসার সুযোগ</a>
+        <a href="#rules" onclick="closeNav()"><i class="fa fa-gavel"></i> ডিস্ট্রিবিউটরের নিয়মাবলি</a>
+        <a href="#contact" onclick="closeNav()"><i class="fa fa-phone"></i> যোগাযোগ করুন</a>
     </div>
-</header>
-    <nav>
-        <a href="index.html">হোম</a>
-        <a href="health-food.html">হেলথ ফুড</a>
-        <a href="personal-care.html">পার্সোনাল কেয়ার</a>
-    </nav>
+
+    <header>
+        <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="TITAN" class="brand-logo">
+        </div>
+        <div style="width: 30px;"></div> 
+    </header>
 
     <div class="slideshow-container">
-        <div class="mySlides fade"><img src="images/pic1.jpg" alt="TITAN Product 1"></div>
-        <div class="mySlides fade"><img src="images/pic2.jpg" alt="TITAN Product 2"></div>
-        <div class="mySlides fade"><img src="images/Pic3.jpg" alt="TITAN Product 3"></div>
-        <div class="mySlides fade"><img src="images/Pic4.jpg" alt="TITAN Product 4"></div>
-        <div class="mySlides fade"><img src="images/Pic5.jpg" alt="TITAN Product 5"></div>
-        <div class="mySlides fade"><img src="images/Pic6.jpg" alt="TITAN Product 6"></div>
-        <div class="mySlides fade"><img src="images/Pic7.jpg" alt="TITAN Product 7"></div>
-        <div class="mySlides fade"><img src="images/Pic8.jpg" alt="TITAN Product 8"></div>
-        <div class="mySlides fade"><img src="images/Pic9.jpg" alt="TITAN Product 9"></div>
+        <div class="mySlides fade"><img src="images/pic1.jpg"></div>
+        <div class="mySlides fade"><img src="images/pic2.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic3.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic4.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic5.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic6.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic7.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic8.jpg"></div>
+        <div class="mySlides fade"><img src="images/Pic9.jpg"></div>
     </div>
 
-    <div class="container">
-        <h1>TITAN-এর সাথে সুস্থ থাকুন</h1>
-        <p>আমরা গর্বের সাথে বিশ্বখ্যাত Tiens-এর প্রিমিয়াম পণ্যগুলো আপনার কাছে পৌঁছে দিচ্ছি।</p>
-        
-        <div class="contact-box">
-            <h3>যেকোনো প্রয়োজনে যোগাযোগ করুন</h3>
-            <p class="phone-number">01636-421393</p>
-            <a href="tel:01636421393" class="call-btn">সরাসরি কল করুন</a>
+    <div id="about" class="container section-card">
+        <h2 class="section-title">About TITAN</h2>
+        <div class="about-content">
+            <h3 class="sub-heading">Titan: A Global Vision for Health & Wealth</h3>
+            
+            <div class="info-item">
+                <h4>১. আমাদের লক্ষ্য (Our Mission)</h4>
+                <p>"বিশ্বজুড়ে গ্রাহকদের উন্নত মানের পণ্য এবং শিক্ষার সুযোগ প্রদানের মাধ্যমে তাদের জীবনযাত্রার মান উন্নত করা এবং একটি সৌহার্দ্যপূর্ণ সমাজ গড়ে তোলা।"</p>
+            </div>
+
+            <div class="info-item">
+                <h4>২. ব্র্যান্ডের মূল কথা (Core Identity)</h4>
+                <p><strong>One World, One Family:</strong> আমরা বিশ্বাস করি পুরো পৃথিবী একটি পরিবার।</p>
+                <p><strong>Innovation & Responsibility:</strong> সর্বাধুনিক বায়ো-টেকনোলজি ও প্রাকৃতিক উপাদানের সমন্বয়।</p>
+            </div>
+
+            <div class="info-item">
+                <h4>৩. আমরা যা প্রদান করি (What We Offer)</h4>
+                <p>স্বাস্থ্য সরঞ্জাম, ডায়েটারি সাপ্লিমেন্ট, স্কিন কেয়ার এবং উদ্যোক্তা হওয়ার ব্যবসার সুযোগ।</p>
+            </div>
+
+            <div class="info-item">
+                <h4>৪. কেন আমরা অনন্য? (Why We Are Different)</h4>
+                <p>১৯৯৫ সাল থেকে বিশ্বস্ত ইতিহাস এবং বিশ্বের ১৯০টি দেশে আমাদের পদচারণা।</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="rules" class="container section-card">
+        <h2 class="section-title">ডিস্ট্রিবিউটরের নিয়মাবলি</h2>
+        <div class="rules-list">
+            <p><strong>TITAN (BANGLADESH)</strong>-এর স্বাধীন ডিস্ট্রিবিউটর হিসেবে আমি নিম্নলিখিত শর্তাবলীতে একমত:</p>
+            <p>০১. ১৮ বছরের বেশি বয়সী হয়ে স্বাধীন ডিস্ট্রিবিউটর হিসেবে আবেদন করছি।</p>
+            <p>০২. আমি কোম্পানির কর্মচারী বা অংশীদার নই।</p>
+            <p>০৩. পণ্য প্রাপ্তির পর শুধুমাত্র অর্থ প্রদান করব।</p>
+            <p>০৪. অনুমতি ব্যতিত ট্রেডমার্ক বা বিজ্ঞাপন ব্যবহার করব না।</p>
+            <p>০৫. পণ্য ক্রয়ে কোনো অতিরিক্ত চার্জ প্রদান করতে বাধ্য নই।</p>
+            <p>০৬. পণ্যের বিষয়বস্তুর কোনো পরিবর্তন করব না।</p>
+            <p>০৭. পণ্যের বর্ণনা সততার সাথে তুলে ধরব।</p>
+            <p>০৮. একমত যে এগুলো ওষুধ নয়, শুধুমাত্র সাপ্লিমেন্ট।</p>
+            <p>০৯. পণ্যের লেবেল ও ম্যানুয়াল অনুসরণ করব।</p>
+            <p>১০. টাইটান চাকরির প্রস্তাব দেয় না, ব্যবসার সুযোগ দেয়।</p>
+            <p>১১. কর (Tax) পরিশোধ ও রাজস্ব বোর্ডকে তথ্য প্রদান করব।</p>
+            <p>১২. পণ্য ফেরতের ক্ষেত্রে ১৪ দিনের নিয়ম মেনে চলব।</p>
+            <p>১৩. কোনো কোর্স ফি নেওয়া কঠোরভাবে নিষিদ্ধ।</p>
+            <p>১৪. চুক্তি লঙ্ঘন করলে ডিস্ট্রিবিউটরশিপ বাতিল করা যাবে।</p>
+            <p>১৫. বছরে অন্তত ০১ বিভি-র পণ্য ক্রয় করতে হবে।</p>
+            <p>১৬. উচ্চপদস্থ লিডাররা প্রতিযোগী কোম্পানির সাথে কাজ করতে পারবে না।</p>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <h2 class="section-title">যোগাযোগ করুন</h2>
+        <div class="contact-grid">
+            <div class="c-box">
+                <i class="fa fa-map-marker"></i>
+                <p><strong>Dhaka:</strong> House#41, Road#24, Gulshan-01</p>
+                <p><strong>Ctg:</strong> IIUC Tower, Agrabad C/A</p>
+            </div>
+            <div class="c-box">
+                <i class="fa fa-phone"></i>
+                <p class="big-text">01636-421393</p>
+                <a href="tel:01636421393" class="btn">CALL NOW</a>
+            </div>
+            <div class="c-box">
+                <i class="fa fa-envelope"></i>
+                <p>taitanofficials393@gmail.com</p>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>© 2026 TITAN Bangladesh | Helpline: 01636-421393</p>
+        <p>© 2026 TITAN Bangladesh</p>
     </footer>
 
     <script>
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+        function openNav() { document.getElementById("mySidenav").style.width = "280px"; }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        for (var i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                var content = this.nextElementSibling;
+                content.style.display = (content.style.display === "block") ? "none" : "block";
+            });
+        }
+
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); 
+        }
     </script>
 </body>
 </html>
