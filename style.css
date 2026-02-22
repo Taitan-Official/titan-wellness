@@ -1,125 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; background: #f4f4f4; color: #333; line-height: 1.6; }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-}
+/* হেডার ও লোগো */
+header { background: #008040; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+.menu-icon { color: white; font-size: 28px; cursor: pointer; }
+.brand-logo { height: 45px; width: auto; }
 
-/* হেডার ডিজাইন */
-header {
-    background-color: #008040;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+/* সাইড মেনু */
+.sidenav { height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; left: 0; background: #008040; overflow-x: hidden; transition: 0.5s; padding-top: 60px; }
+.sidenav a, .dropdown-btn { padding: 15px 25px; text-decoration: none; font-size: 16px; color: white; display: block; border-bottom: 1px solid rgba(255,255,255,0.1); font-weight: bold; width: 100%; text-align: left; background: none; border: none; cursor: pointer; }
+.dropdown-container { display: none; background: #006430; padding-left: 20px; }
+.sidenav a:hover, .dropdown-btn:hover { background: #006430; }
+.sidenav .closebtn { position: absolute; top: 10px; right: 25px; font-size: 36px; }
 
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-}
+/* স্লাইডশো */
+.slideshow-container { width: 100%; height: 250px; overflow: hidden; position: relative; background: #000; }
+.mySlides img { width: 100%; height: 250px; object-fit: cover; }
 
-.logo-text {
-    font-size: 24px;
-    font-weight: bold;
-}
+/* সেকশন ডিজাইন */
+.container { padding: 30px 20px; max-width: 900px; margin: 20px auto; }
+.section-card { background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.section-title { color: #008040; text-align: center; margin-bottom: 20px; font-size: 24px; border-bottom: 2px solid #008040; display: inline-block; width: 100%; padding-bottom: 10px; }
 
-/* সাইড মেনু ডিজাইন */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    left: 0;
-    background-color: #008040;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
+/* কন্টাক্ট গ্রিড */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.c-box { background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #eee; }
+.c-box i { font-size: 30px; color: #008040; margin-bottom: 10px; }
+.big-text { font-size: 20px; font-weight: bold; margin: 10px 0; color: #008040; }
+.btn { background: #008040; color: white; padding: 8px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
 
-.sidenav a {
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-    display: block;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    font-weight: bold;
-}
+/* টেক্সট স্টাইল */
+.info-item, .rules-list p { margin-bottom: 15px; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; font-size: 14px; }
+.sub-heading { color: #008040; text-align: center; margin-bottom: 20px; }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    border-bottom: none;
-}
-
-/* স্লাইডশো ডিজাইন */
-.slideshow-container {
-    width: 100%;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-}
-
-.mySlides img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-/* কন্টেন্ট এবং কার্ড */
-.container {
-    padding: 20px;
-    text-align: center;
-}
-
-.contact-box {
-    margin-top: 30px;
-    padding: 20px;
-    border: 1px solid #008040;
-    border-radius: 10px;
-    background: #f9f9f9;
-}
-
-.phone {
-    font-size: 22px;
-    font-weight: bold;
-    color: #008040;
-    margin: 10px 0;
-}
-
-.call-btn {
-    background: #008040;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-
-.fade {
-    animation: fade 1.5s;
-}
-@keyframes fade {
-    from {opacity: .4} to {opacity: 1}
-}
+footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+.fade { animation: fade 1.5s; }
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
