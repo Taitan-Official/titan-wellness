@@ -3,156 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITAN | Official Tiens Partner</title>
+    <title>TITAN | Official Tiens Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Roboto', sans-serif; background: #f4f7f6; }
+        body { font-family: 'Roboto', sans-serif; background: #ffffff; color: #333; }
         .tiens-green { color: #008751; }
         .bg-tiens-green { background-color: #008751; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://tiens.com.bd/wp-content/uploads/2021/03/tiens-bg.jpg'); background-size: cover; background-position: center; height: 350px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-bottom: 40px; }
-        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; transition: 0.3s; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .img-box { background: #fff; height: 220px; padding: 20px; display: flex; align-items: center; justify-content: center; }
-        .img-box img { max-height: 100%; object-fit: contain; }
-        .desc-text { font-size: 0.85rem; color: #555; line-height: 1.5; margin-top: 10px; }
-        .order-btn { background: #008751; color: white; padding: 14px; text-align: center; font-weight: bold; cursor: pointer; border: none; width: 100%; transition: 0.3s; }
-        .order-btn:hover { background: #006b40; }
-        .section-header { font-size: 1.8rem; font-weight: bold; color: #333; margin-bottom: 30px; border-left: 6px solid #008751; padding-left: 15px; }
+        
+        /* Official Navigation Style */
+        .nav-link { font-weight: 500; color: #444; transition: 0.3s; padding: 5px 10px; border-bottom: 2px solid transparent; }
+        .nav-link:hover { color: #008751; border-color: #008751; }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://tiens.com.bd/wp-content/uploads/2021/03/tiens-bg.jpg');
+            background-size: cover; background-position: center; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+        }
+
+        /* Product Card Official Style */
+        .product-card {
+            border: 1px solid #f0f0f0; transition: all 0.4s ease; background: #fff; height: 100%; display: flex; flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: #008751; }
+        
+        .img-container { height: 250px; display: flex; align-items: center; justify-content: center; padding: 20px; background: #fdfdfd; }
+        .img-container img { max-height: 100%; transition: transform 0.5s; }
+        .product-card:hover .img-container img { transform: scale(1.1); }
+
+        .price-text { font-size: 1.5rem; color: #e11d48; font-weight: bold; }
+        .btn-order { background: #008751; color: white; padding: 15px; text-align: center; font-weight: bold; width: 100%; transition: 0.3s; text-transform: uppercase; }
+        .btn-order:hover { background: #006b40; }
+
+        .section-header { border-bottom: 2px solid #008751; display: inline-block; padding-bottom: 5px; margin-bottom: 40px; font-weight: 700; color: #222; letter-spacing: 1px; }
+        .details-box { font-size: 0.9rem; color: #666; line-height: 1.6; }
     </style>
 </head>
 <body>
 
-    <nav class="bg-white sticky top-0 z-50 shadow-sm px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-            <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Logo.png" class="h-10">
-            <h1 class="text-2xl font-bold tiens-green italic border-l-2 border-gray-200 pl-3">TITAN</h1>
+    <div class="bg-gray-100 py-2 px-6 text-xs text-gray-600 flex justify-between items-center hidden md:flex">
+        <span>Tiens Official Authorized Partner</span>
+        <div class="flex space-x-4 font-medium">
+            <span>Call: 01636-421393</span>
+            <span>Email: taitanofficials393@gmail.com</span>
         </div>
-        <a href="tel:01636421393" class="bg-tiens-green text-white px-6 py-2 rounded-full font-bold text-sm shadow-md">Call: 01636421393</a>
+    </div>
+
+    <nav class="bg-white sticky top-0 z-50 shadow-sm px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Logo.png" class="h-10">
+            <div class="h-8 w-[1px] bg-gray-300"></div>
+            <h1 class="text-2xl font-bold tiens-green italic tracking-tighter">TITAN</h1>
+        </div>
+        <div class="hidden lg:flex space-x-8 uppercase text-sm tracking-wide">
+            <a href="#food" class="nav-link">Health Food</a>
+            <a href="#personal" class="nav-link">Personal Care</a>
+            <a href="#machine" class="nav-link">Appliances</a>
+            <a href="tel:01636421393" class="bg-tiens-green text-white px-4 py-2 rounded font-bold hover:bg-black transition">Contact Now</a>
+        </div>
     </nav>
 
-    <section class="hero px-6">
-        <div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Better Tiens, Better Life</h2>
-            <p class="text-lg md:text-xl font-light opacity-90">স্বাস্থ্যের সঠিক যত্ন নিন বিশ্বের সেরা সাপ্লিমেন্টের মাধ্যমে</p>
+    <section class="hero-banner">
+        <div class="px-6">
+            <h2 class="text-4xl md:text-7xl font-bold mb-6 uppercase tracking-widest drop-shadow-xl">Better Tiens, Better Life</h2>
+            <p class="text-lg md:text-2xl font-light max-w-3xl mx-auto drop-shadow-md">বিশ্ববিখ্যাত টিয়েন্স হেলথ সলিউশন এখন আপনার দরজায়। অরিজিনাল প্রোডাক্টের নিশ্চয়তা নিয়ে আমরা আছি আপনার পাশে।</p>
+            <div class="mt-10">
+                <a href="#food" class="bg-tiens-green px-10 py-4 rounded font-bold text-lg uppercase hover:bg-white hover:text-green-800 transition shadow-2xl">প্রোডাক্টগুলো দেখুন</a>
+            </div>
         </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-6 pb-20">
+    <main class="max-w-7xl mx-auto px-6 py-20">
         
-        <h2 class="section-header">স্বাস্থ্য সাপ্লিমেন্ট (Health Food)</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-            <div class="product-card">
-                <div class="img-box"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Nutrient-Super-Calcium-Powder.jpg"></div>
-                <div class="p-6 flex-grow">
-                    <h3 class="font-bold text-xl text-gray-800">Super Calcium Powder</h3>
-                    <p class="text-red-600 font-bold text-lg mt-1">৳ ২,০৩১.৭৫</p>
-                    <div class="desc-text">
-                        <strong>উপকারিতা:</strong>
-                        <ul class="list-disc ml-4 mt-2">
-                            <li>হাড়ের ঘনত্ব বাড়াতে এবং হাড় ক্ষয় রোধ করতে সাহায্য করে।</li>
-                            <li>দাঁত মজবুত করে এবং পেশির খিঁচুনি দূর করে।</li>
-                            <li>অস্টিওপোরোসিস এর মতো জটিল সমস্যা প্রতিরোধে অত্যন্ত কার্যকর।</li>
-                            <li>শরীরের ক্যালসিয়ামের অভাব দ্রুত পূরণ করে।</li>
-                        </ul>
+        <div id="food" class="mb-32">
+            <h2 class="section-header text-3xl uppercase">স্বাস্থ্য সাপ্লিমেন্ট ও ফুড (Health Food)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                
+                <div class="product-card">
+                    <div class="img-container"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Nutrient-Super-Calcium-Powder.jpg" alt="Calcium"></div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="font-bold text-2xl text-gray-800 mb-2">Nutrient Super Calcium Powder</h3>
+                        <p class="price-text mb-4">৳ ২,০৩১.৭৫</p>
+                        <div class="details-box">
+                            <strong>কেন ব্যবহার করবেন:</strong>
+                            <ul class="list-disc ml-5 mt-2 space-y-1">
+                                <li>হাড় ও দাঁতের মজবুতি নিশ্চিত করে এবং হাড় ক্ষয় রোধ করে।</li>
+                                <li>শরীরের রক্ত জমাট বাঁধতে এবং হৃদপিণ্ডের স্বাভাবিক স্পন্দনে সহায়তা করে।</li>
+                                <li>অস্টিওপোরোসিস এর মতো হাড়ের রোগ প্রতিরোধে জাদুর মতো কাজ করে।</li>
+                                <li>এটি আয়নিক ফর্মে থাকায় শরীর দ্রুত শুষে নিতে পারে।</li>
+                            </ul>
+                        </div>
                     </div>
+                    <button onclick="order('Calcium Powder')" class="btn-order">অর্ডার করুন</button>
                 </div>
-                <button onclick="order('Calcium Powder')" class="order-btn">অর্ডার করুন</button>
-            </div>
 
-            <div class="product-card">
-                <div class="img-box"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordyceps-Capsule.jpg"></div>
-                <div class="p-6 flex-grow">
-                    <h3 class="font-bold text-xl text-gray-800">Cordyceps Capsules</h3>
-                    <p class="text-red-600 font-bold text-lg mt-1">৳ ৪,২৮৯.২৫</p>
-                    <div class="desc-text">
-                        <strong>উপকারিতা:</strong>
-                        <ul class="list-disc ml-4 mt-2">
-                            <li>কিডনি এবং ফুসফুসের কার্যক্ষমতা বৃদ্ধি করে।</li>
-                            <li>শরীরের রোগ প্রতিরোধ ক্ষমতা (Immunity) শক্তিশালী করে।</li>
-                            <li>শ্বাসকষ্ট ও অ্যাজমার সমস্যায় বিশেষ উপকারী।</li>
-                            <li>প্রাকৃতিক অ্যান্টি-বায়োটিক হিসেবে কাজ করে এবং ক্লান্তি দূর করে।</li>
-                        </ul>
+                <div class="product-card">
+                    <div class="img-container"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Cordyceps-Capsule.jpg" alt="Cordyceps"></div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="font-bold text-2xl text-gray-800 mb-2">Tiens Cordyceps Capsules</h3>
+                        <p class="price-text mb-4">৳ ৪,২৮৯.২৫</p>
+                        <div class="details-box">
+                            <strong>কেন ব্যবহার করবেন:</strong>
+                            <ul class="list-disc ml-5 mt-2 space-y-1">
+                                <li>প্রাকৃতিক অ্যান্টি-বায়োটিক হিসেবে কাজ করে এবং ইমিউন সিস্টেম বাড়ায়।</li>
+                                <li>কিডনি ও ফুসফুসের সঠিক কার্যকারিতা বজায় রাখে।</li>
+                                <li>শ্বাসকষ্ট, হাঁপানি এবং যৌন দুর্বলতা দূর করতে অত্যন্ত কার্যকর।</li>
+                                <li>শরীরের দীর্ঘস্থায়ী ক্লান্তি ও অবসাদ দূর করে।</li>
+                            </ul>
+                        </div>
                     </div>
+                    <button onclick="order('Cordyceps')" class="btn-order">অর্ডার করুন</button>
                 </div>
-                <button onclick="order('Cordyceps')" class="order-btn">অর্ডার করুন</button>
-            </div>
 
-            <div class="product-card">
-                <div class="img-box"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Zinc-Capsule.jpg"></div>
-                <div class="p-6 flex-grow">
-                    <h3 class="font-bold text-xl text-gray-800">Zinc Plus Capsules</h3>
-                    <p class="text-red-600 font-bold text-lg mt-1">৳ ২,৪৮৩.২৫</p>
-                    <div class="desc-text">
-                        <strong>উপকারিতা:</strong>
-                        <ul class="list-disc ml-4 mt-2">
-                            <li>শরীরের সঠিক বৃদ্ধি ও বিকাশে সাহায্য করে।</li>
-                            <li>খাবারে অরুচি দূর করে এবং দৃষ্টিশক্তি উন্নত করে।</li>
-                            <li>প্রজনন ক্ষমতা বৃদ্ধি এবং হরমোনের ভারসাম্য রক্ষা করে।</li>
-                            <li>চুল পড়া রোধ করতে এবং ত্বকের সজীবতা বজায় রাখে।</li>
-                        </ul>
+                <div class="product-card">
+                    <div class="img-container"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Zinc-Capsule.jpg" alt="Zinc"></div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="font-bold text-2xl text-gray-800 mb-2">Tiens Zincplus Capsules</h3>
+                        <p class="price-text mb-4">৳ ২,৪৮৩.২৫</p>
+                        <div class="details-box">
+                            <strong>কেন ব্যবহার করবেন:</strong>
+                            <ul class="list-disc ml-5 mt-2 space-y-1">
+                                <li>শিশুদের শারীরিক ও মানসিক বিকাশে অত্যন্ত গুরুত্বপূর্ণ।</li>
+                                <li>খাবারে অরুচি দূর করে এবং দৃষ্টিশক্তি বাড়াতে সাহায্য করে।</li>
+                                <li>প্রজনন ক্ষমতা বৃদ্ধি করে এবং হরমোনের ভারসাম্য রক্ষা করে।</li>
+                                <li>ত্বক, চুল ও নখের সুস্থতা বজায় রাখে।</li>
+                            </ul>
+                        </div>
                     </div>
+                    <button onclick="order('Zinc Plus')" class="btn-order">অর্ডার করুন</button>
                 </div>
-                <button onclick="order('Zinc Plus')" class="order-btn">অর্ডার করুন</button>
             </div>
-
         </div>
 
-        <h2 class="section-header mt-20">প্রিমিয়াম হেলথ ইকুইপমেন্ট</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="product-card">
-                <div class="img-box h-72"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Blood-Circulation-Massager.jpg"></div>
-                <div class="p-8 flex-grow">
-                    <h3 class="text-2xl font-bold text-gray-800">Blood Circulative Massager (BCM)</h3>
-                    <p class="text-red-600 text-2xl font-bold mt-2">৳ ৬৭,৭২৫.০০</p>
-                    <p class="desc-text mt-4">
-                        <strong>বিস্তারিত:</strong><br>
-                        BCM মেশিন হলো আধুনিক প্রযুক্তির এক অনন্য উদ্ভাবন। এটি হাই-ফ্রিকোয়েন্সি ভাইব্রেশনের মাধ্যমে শরীরের প্রতিটি শিরা ও উপশিরায় রক্ত সঞ্চালন বৃদ্ধি করে। <br><br>
-                        ১. উচ্চ রক্তচাপ ও ডায়াবেটিস নিয়ন্ত্রণে সাহায্য করে।<br>
-                        ২. শরীরের মেদ কমাতে এবং বাত-ব্যথা দূর করতে কার্যকর।<br>
-                        ৩. প্যারালাইসিস রোগীদের পুনর্গঠনে বিশেষ ভূমিকা রাখে।<br>
-                        ৪. মাত্র ১৫ মিনিট ব্যবহারে ৫ কিমি হাঁটার সমান উপকার পাওয়া যায়।
-                    </p>
+        <div id="machine" class="mb-32">
+            <h2 class="section-header text-3xl uppercase">অফিশিয়াল হেলথ অ্যাপ্লায়েন্স (মেশিন)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <div class="product-card">
+                    <div class="img-container h-80"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Blood-Circulation-Massager.jpg" alt="BCM"></div>
+                    <div class="p-10 flex-grow">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4">BCM - Blood Circulation Massager</h3>
+                        <p class="price-text text-3xl mb-6">৳ ৬৭,৭২৫.০০</p>
+                        <div class="details-box text-lg">
+                            <p class="mb-4">টিয়েন্স বিসিএম মেশিন একটি বিশ্ববিখ্যাত ফিজিওথেরাপি ডিভাইস যা আপনার পায়ের তলা থেকে মাথার তালু পর্যন্ত রক্ত সঞ্চালন বাড়িয়ে দেয়।</p>
+                            <ul class="list-disc ml-5 space-y-2 font-medium">
+                                <li>ডায়াবেটিস এবং হাই-ব্লাড প্রেশার নিয়ন্ত্রণে সহায়তা করে।</li>
+                                <li>বাত-ব্যথা, মেরুদণ্ডের ব্যথা এবং জয়েন্টের সমস্যা দূর করে।</li>
+                                <li>প্যারালাইসিস রোগীদের স্নায়ু সচল করতে সাহায্য করে।</li>
+                                <li>১৫ মিনিট ব্যবহারে ৫ কিমি হাঁটার সমান ব্যায়াম হয়।</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="order('BCM Machine')" class="btn-order py-6 text-xl">অর্ডার করুন (Cash On Delivery)</button>
                 </div>
-                <button onclick="order('BCM Machine')" class="order-btn py-5 text-xl">বুকিং দিন</button>
-            </div>
-            <div class="product-card">
-                <div class="img-box h-72"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Head-Care-Apparatus.jpg"></div>
-                <div class="p-8 flex-grow">
-                    <h3 class="text-2xl font-bold text-gray-800">Head Care Apparatus</h3>
-                    <p class="text-red-600 text-2xl font-bold mt-2">৳ ১৮,০৬০.০০</p>
-                    <p class="desc-text mt-4">
-                        <strong>বিস্তারিত:</strong><br>
-                        এটি একটি বহুমুখী লেজার থেরাপি ডিভাইস যা মূলত হাই-ব্লাড প্রেশার স্বাভাবিক করতে ব্যবহৃত হয়।<br><br>
-                        ১. মাথা ব্যথ্যা ও মাইগ্রেনের সমস্যা দ্রুত দূর করে।<br>
-                        ২. হার্টের ব্লক ঝুঁকি কমাতে এবং ব্রেইন স্ট্রোক প্রতিরোধে কাজ করে।<br>
-                        ৩. লেজার থেরাপির মাধ্যমে চুলের গোড়া মজবুত করে এবং চুল পড়া কমায়।<br>
-                        ৪. এটি শরীরের যেকোনো অংশে মেসেজ থেরাপি হিসেবে ব্যবহার করা যায়।
-                    </p>
+
+                <div class="product-card">
+                    <div class="img-container h-80"><img src="https://tiens.com.bd/wp-content/uploads/2021/03/Tiens-Head-Care-Apparatus.jpg" alt="Headcare"></div>
+                    <div class="p-10 flex-grow">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4">Multifunctional Headcare Apparatus</h3>
+                        <p class="price-text text-3xl mb-6">৳ ১৮,০৬০.০০</p>
+                        <div class="details-box text-lg">
+                            <p class="mb-4">আধুনিক বায়ো-ইলেকট্রিক প্রযুক্তিতে তৈরি এই ডিভাইসটি ব্লাড প্রেশার নিয়ন্ত্রণে সারা পৃথিবীতে সমাদৃত।</p>
+                            <ul class="list-disc ml-5 space-y-2 font-medium">
+                                <li>উচ্চ রক্তচাপ দ্রুত স্বাভাবিক করতে সহায়তা করে।</li>
+                                <li>মাথাব্যথা, মাইগ্রেন এবং ব্রেইন স্ট্রোকের ঝুঁকি কমায়।</li>
+                                <li>এটি লেজার থেরাপির কাজ করে, যা নতুন চুল গজাতে সাহায্য করে।</li>
+                                <li>হার্টের ব্লকেজ ঝুঁকি কমাতে কার্যকর।</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="order('Head Care Apparatus')" class="btn-order py-6 text-xl">বুকিং দিন এখনই</button>
                 </div>
-                <button onclick="order('Head Care Apparatus')" class="order-btn py-5 text-xl">বুকিং দিন</button>
             </div>
         </div>
 
     </main>
 
-    <footer class="bg-gray-900 text-white py-16 text-center">
-        <h2 class="text-3xl font-bold tiens-green italic mb-4">TITAN GLOBAL</h2>
-        <p class="text-gray-400 text-sm max-w-md mx-auto mb-8">আমরা দীর্ঘকাল ধরে টিয়েন্সের মানসম্মত পণ্য সরাসরি কাস্টমারের কাছে পৌঁছে দিচ্ছি।</p>
-        <div class="flex flex-col md:flex-row justify-center gap-10 font-bold border-t border-gray-800 pt-10">
-            <p>Call: 01636-421393</p>
-            <p>WhatsApp: 01636-421393</p>
+    <footer class="bg-gray-900 text-white py-24 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold tiens-green italic mb-8">TITAN GLOBAL</h2>
+            <p class="text-gray-400 mb-12 text-lg">আমরা টিয়েন্স বাংলাদেশের অনুমোদিত অংশীদার। আপনার পরিবারের সুস্বাস্থ্য ও উজ্জ্বল ভবিষ্যৎ নিশ্চিত করাই আমাদের একমাত্র অঙ্গীকার।</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-800 pt-16 mb-16">
+                <div>
+                    <h4 class="text-green-500 font-bold mb-4 uppercase tracking-widest">Phone</h4>
+                    <p class="text-xl">01636-421393</p>
+                </div>
+                <div>
+                    <h4 class="text-green-500 font-bold mb-4 uppercase tracking-widest">WhatsApp</h4>
+                    <p class="text-xl">01636-421393</p>
+                </div>
+                <div>
+                    <h4 class="text-green-500 font-bold mb-4 uppercase tracking-widest">Online Support</h4>
+                    <p class="text-sm">taitanofficials393@gmail.com</p>
+                </div>
+            </div>
+            
+            <p class="text-gray-600 text-xs tracking-widest uppercase">© 2026 Titan Wellness | Tiens Authorized Distributor Bangladesh</p>
         </div>
     </footer>
 
     <script>
         function order(p) {
-            const name = prompt("আপনার নাম:");
-            const addr = prompt("ডেলিভারি ঠিকানা:");
+            const name = prompt("আপনার নাম লিখুন:");
+            const addr = prompt("আপনার ডেলিভারি ঠিকানা লিখুন:");
             if(name && addr) {
-                const text = `*নতুন অর্ডার (TITAN)*%0A-----------------%0A*প্রোডাক্ট:* ${p}%0A*ক্রেতার নাম:* ${name}%0A*ঠিকানা:* ${addr}%0A-----------------%0Aআমি এটি কিনতে আগ্রহী।`;
-                window.open("https://wa.me/8801636421393?text=" + text);
+                const msg = `*NEW OFFICIAL ORDER*%0A------------------%0A*Brand:* TITAN%0A*Product:* ${p}%0A*Customer:* ${name}%0A*Address:* ${addr}%0A------------------%0Aআমি এই টিয়েন্স প্রোডাক্টটি কিনতে চাই।`;
+                window.open(`https://wa.me/8801636421393?text=${msg}`);
             }
         }
     </script>
